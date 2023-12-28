@@ -174,6 +174,12 @@ type ServiceConfig struct {
 }
 
 // HealthChecks used to distinguish between liveness and readiness
+type Kustomize struct{
+	ApiVersion string
+	Kind string
+	Resources []string
+}
+
 type HealthChecks struct {
 	Liveness  HealthCheck
 	Readiness HealthCheck

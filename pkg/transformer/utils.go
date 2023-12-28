@@ -305,6 +305,9 @@ func Print(name, path string, trailing string, data []byte, toStdout, generateJS
 	return file, nil
 }
 
+
+
+
 // If Openshift, change to OpenShift!
 func formatProviderName(provider string) string {
 	if strings.EqualFold(provider, "openshift") {
