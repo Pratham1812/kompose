@@ -861,7 +861,7 @@ func FormatEnvName(name string) string {
 	if len(envName) > 63 {
 		envName = envName[len(envName)-63:]
 	}
-	return strings.Replace(envName, ".", "-", -1)
+	return strings.Replace(envName, ".", "", -1)
 }
 
 // FormatFileName format file name
